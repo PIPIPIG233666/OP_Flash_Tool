@@ -1,6 +1,6 @@
 ::call test_rw mode.bat [y n]
 ::rwmode_gptmain_mode=1: 0-5 common  6 special  7-n common
-::rwmode_gptmain_mode=2: 0-33 common  34-n common
+::rwmode_gptmain_mode=2: 0-33 common  34 special  35-n common
 
 @ECHO OFF
 set runfulltest=%1
@@ -50,12 +50,17 @@ goto FULLTEST-DONE
 set result_0-33=failed
 echo.^<?xml version="1.0" ?^>^<data^>^<program SECTOR_SIZE_IN_BYTES="%secsize%" filename="tmp.bin" physical_partition_number="0" label="0-33" start_sector="0" num_partition_sectors="34"/^>^</data^>>cmd.xml
 fh_loader.exe --port=\\.\%port% --memoryname=%storage_type% --sendxml=cmd.xml --convertprogram2read --mainoutputdir=.\ --skip_configure --showpercentagecomplete --special_rw_mode=oplus_gptmain --noprompt && set result_0-33=success
-set result_34-4000=failed
-echo.^<?xml version="1.0" ?^>^<data^>^<program SECTOR_SIZE_IN_BYTES="%secsize%" filename="tmp.bin" physical_partition_number="0" label="result_34-4000" start_sector="34" num_partition_sectors="3967"/^>^</data^>>cmd.xml
-fh_loader.exe --port=\\.\%port% --memoryname=%storage_type% --sendxml=cmd.xml --convertprogram2read --mainoutputdir=.\ --skip_configure --showpercentagecomplete --special_rw_mode=oplus_gptmain --noprompt && set result_34-4000=success
+set result_34=failed
+echo.^<?xml version="1.0" ?^>^<data^>^<program SECTOR_SIZE_IN_BYTES="%secsize%" filename="tmp.bin" physical_partition_number="0" label="34" start_sector="34" num_partition_sectors="1"/^>^</data^>>cmd.xml
+fh_loader.exe --port=\\.\%port% --memoryname=%storage_type% --sendxml=cmd.xml --convertprogram2read --mainoutputdir=.\ --skip_configure --showpercentagecomplete --special_rw_mode=oplus_gptmain --noprompt && set result_34=success
+set result_35-4000=failed
+echo.^<?xml version="1.0" ?^>^<data^>^<program SECTOR_SIZE_IN_BYTES="%secsize%" filename="tmp.bin" physical_partition_number="0" label="result_35-4000" start_sector="35" num_partition_sectors="3966"/^>^</data^>>cmd.xml
+fh_loader.exe --port=\\.\%port% --memoryname=%storage_type% --sendxml=cmd.xml --convertprogram2read --mainoutputdir=.\ --skip_configure --showpercentagecomplete --special_rw_mode=oplus_gptmain --noprompt && set result_35-4000=success
 set rwmode_gptmain_mode=unknown
 if "%result_0-33%"=="success" (
-    if "%result_34-4000%"=="success" set rwmode_gptmain_mode=2
+    if "%result_34%"=="failed" (
+        if "%result_35-4000%"=="success" set rwmode_gptmain_mode=2
+    )
 )
 goto FULLTEST-DONE
 
@@ -67,5 +72,6 @@ echo.result_0-5     %result_0-5%
 echo.result_6       %result_6%
 echo.result_7-4000  %result_7-4000%
 echo.result_0-33    %result_0-33%
-echo.result_34-4000 %result_34-4000%
+echo.result_34      %result_34%
+echo.result_35-4000 %result_35-4000%
 goto :eof
