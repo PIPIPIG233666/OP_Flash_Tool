@@ -18,7 +18,7 @@ fh_loader.exe --port=\\.\%port% --memoryname=%storage_type% --sendxml=cmd.xml --
 set rwmode=oplus_gptmain
 ::33-35
 set result_33-35=failed
-echo.^<?xml version="1.0" ?^>^<data^>^<program SECTOR_SIZE_IN_BYTES="%secsize%" filename="tmp.bin" physical_partition_number="0" label="33-35" start_sector="3" num_partition_sectors="33"/^>^</data^>>cmd.xml
+echo.^<?xml version="1.0" ?^>^<data^>^<program SECTOR_SIZE_IN_BYTES="%secsize%" filename="tmp.bin" physical_partition_number="0" label="33-35" start_sector="33" num_partition_sectors="3"/^>^</data^>>cmd.xml
 fh_loader.exe --port=\\.\%port% --memoryname=%storage_type% --sendxml=cmd.xml --convertprogram2read --mainoutputdir=.\ --skip_configure --showpercentagecomplete --special_rw_mode=oplus_gptmain --noprompt && set result_33-35=success&& set rwmode_gptmain_mode=1&& goto QUICKTEST-DONE
 if "%rwmode_gptmain_mode%"=="" set rwmode_gptmain_mode=2
 goto QUICKTEST-DONE
@@ -53,6 +53,7 @@ fh_loader.exe --port=\\.\%port% --memoryname=%storage_type% --sendxml=cmd.xml --
 set result_34-4000=failed
 echo.^<?xml version="1.0" ?^>^<data^>^<program SECTOR_SIZE_IN_BYTES="%secsize%" filename="tmp.bin" physical_partition_number="0" label="result_34-4000" start_sector="34" num_partition_sectors="3967"/^>^</data^>>cmd.xml
 fh_loader.exe --port=\\.\%port% --memoryname=%storage_type% --sendxml=cmd.xml --convertprogram2read --mainoutputdir=.\ --skip_configure --showpercentagecomplete --special_rw_mode=oplus_gptmain --noprompt && set result_34-4000=success
+set rwmode_gptmain_mode=unknown
 if "%result_0-33%"=="success" (
     if "%result_34-4000%"=="success" set rwmode_gptmain_mode=2
 )
