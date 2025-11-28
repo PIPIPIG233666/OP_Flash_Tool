@@ -35,6 +35,12 @@ winget install Google.PlatformTools
 
 -----
 
+## 0.1\. Prepare OPLUS Resources (Chimera)
+
+If you are working with Oplus devices (OnePlus, Oppo, Realme) and have the Chimera_OPLUS_files.zip archive, you must extract the specialized programmers/auth files before starting.
+* Locate the Archive: Ensure Chimera_OPLUS_files.zip is saved on your computer.
+* Extract: Unzip the contents to a known location.
+
 ## 1\. Enter Firehose Mode
 
 Initialize the tool and set up the programmer paths.
