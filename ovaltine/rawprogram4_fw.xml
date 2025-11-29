@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<data>
+
+<!-- abl -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="abl.elf" label="abl_a" num_partition_sectors="256" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="1024.0" sparse="false" start_byte_hex="0x16606000" start_sector="91654"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="abl_b" num_partition_sectors="256" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="1024.0" sparse="false" start_byte_hex="0x66013000" start_sector="417811"/>
+
+<!-- aop -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="aop.mbn" label="aop_a" num_partition_sectors="128" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="512.0" sparse="false" start_byte_hex="0x506000" start_sector="1286"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="aop_b" num_partition_sectors="128" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="512.0" sparse="false" start_byte_hex="0x4ff13000" start_sector="327443"/>
+
+<!-- aop_config -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="aop_devcfg.mbn" label="aop_config_a" num_partition_sectors="128" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="512.0" sparse="false" start_byte_hex="0x586000" start_sector="1414"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="aop_config_b" num_partition_sectors="128" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="512.0" sparse="false" start_byte_hex="0x4ff93000" start_sector="327571"/>
+
+<!-- bluetooth -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="BTFM.bin" label="bluetooth_a" num_partition_sectors="1024" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="4096.0" sparse="false" start_byte_hex="0x13e06000" start_sector="81414"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="bluetooth_b" num_partition_sectors="1024" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="4096.0" sparse="false" start_byte_hex="0x63813000" start_sector="407571"/>
+
+<!-- cpucp -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="cpucp.elf" label="cpucp_a" num_partition_sectors="256" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="1024.0" sparse="false" start_byte_hex="0x38a0f000" start_sector="231951"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="cpucp_b" num_partition_sectors="256" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="1024.0" sparse="false" start_byte_hex="0x8841c000" start_sector="558108"/>
+
+<!-- devcfg -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="devcfg.mbn" label="devcfg_a" num_partition_sectors="32" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="128.0" sparse="false" start_byte_hex="0x26786000" start_sector="157574"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="devcfg_b" num_partition_sectors="32" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="128.0" sparse="false" start_byte_hex="0x76193000" start_sector="483731"/>
+
+<!-- dsp -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="dspso.bin" label="dsp_a" num_partition_sectors="16384" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="65536.0" sparse="false" start_byte_hex="0x16706000" start_sector="91910"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="dsp_b" num_partition_sectors="16384" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="65536.0" sparse="false" start_byte_hex="0x66113000" start_sector="418067"/>
+
+<!-- featenabler -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="featenabler.mbn" label="featenabler_a" num_partition_sectors="32" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="128.0" sparse="false" start_byte_hex="0x38b0f000" start_sector="232207"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="featenabler_b" num_partition_sectors="32" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="128.0" sparse="false" start_byte_hex="0x8851c000" start_sector="558364"/>
+
+<!-- hyp -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="hypvm.mbn" label="hyp_a" num_partition_sectors="2048" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="8192.0" sparse="false" start_byte_hex="0xa06000" start_sector="2566"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="hyp_b" num_partition_sectors="2048" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="8192.0" sparse="false" start_byte_hex="0x50413000" start_sector="328723"/>
+
+<!-- imagefv -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="imagefv.elf" label="imagefv_a" num_partition_sectors="512" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="2048.0" sparse="false" start_byte_hex="0x281ca000" start_sector="164298"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="imagefv_b" num_partition_sectors="512" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="2048.0" sparse="false" start_byte_hex="0x77bd7000" start_sector="490455"/>
+
+<!-- keymaster -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="keymint.mbn" label="keymaster_a" num_partition_sectors="128" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="512.0" sparse="false" start_byte_hex="0x1a706000" start_sector="108294"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="keymaster_b" num_partition_sectors="128" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="512.0" sparse="false" start_byte_hex="0x6a113000" start_sector="434451"/>
+
+<!-- modem -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="NON-HLOS.bin" label="modem_a" num_partition_sectors="76800" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="307200.0" sparse="false" start_byte_hex="0x1206000" start_sector="4614"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="modem_b" num_partition_sectors="76800" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="307200.0" sparse="false" start_byte_hex="0x50c13000" start_sector="330771"/>
+
+<!-- oplus_sec -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="oplus_sec.mbn" label="oplus_sec_a" num_partition_sectors="2560" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="10240.0" sparse="false" start_byte_hex="0x4696f000" start_sector="289135"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="oplus_sec.mbn" label="oplus_sec_b" num_partition_sectors="2560" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="10240.0" sparse="false" start_byte_hex="0x9457c000" start_sector="607612"/>
+
+<!-- qupfw -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="qupv3fw.elf" label="qupfw_a" num_partition_sectors="20" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="80.0" sparse="false" start_byte_hex="0x267a6000" start_sector="157606"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="qupfw_b" num_partition_sectors="20" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="80.0" sparse="false" start_byte_hex="0x761b3000" start_sector="483763"/>
+
+<!-- shrm -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="shrm.elf" label="shrm_a" num_partition_sectors="32" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="128.0" sparse="false" start_byte_hex="0x283ca000" start_sector="164810"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="shrm_b" num_partition_sectors="32" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="128.0" sparse="false" start_byte_hex="0x77dd7000" start_sector="490967"/>
+
+<!-- splash -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="splash.img" label="splash_a" num_partition_sectors="8356" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="33424.0" sparse="false" start_byte_hex="0x4d76f000" start_sector="317295"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="splash.img" label="splash_b" num_partition_sectors="8356" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="33424.0" sparse="false" start_byte_hex="0x9b37c000" start_sector="635772"/>
+
+<!-- tz -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="tz.mbn" label="tz_a" num_partition_sectors="1024" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="4096.0" sparse="false" start_byte_hex="0x606000" start_sector="1542"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="tz_b" num_partition_sectors="1024" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="4096.0" sparse="false" start_byte_hex="0x50013000" start_sector="327699"/>
+
+<!-- uefi -->
+<!--program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="uefi.elf" label="uefi_a" num_partition_sectors="1280" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="5120.0" sparse="false" start_byte_hex="0x6000" start_sector="6"/-->
+<!--program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="uefi_b" num_partition_sectors="1280" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="5120.0" sparse="false" start_byte_hex="0x4fa13000" start_sector="326163"/-->
+
+<!-- uefisecapp -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="uefi_sec.mbn" label="uefisecapp_a" num_partition_sectors="512" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="2048.0" sparse="false" start_byte_hex="0x27fca000" start_sector="163786"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="uefisecapp_b" num_partition_sectors="512" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="2048.0" sparse="false" start_byte_hex="0x779d7000" start_sector="489943"/>
+
+<!-- xbl_ramdump -->
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="XblRamdump.elf" label="xbl_ramdump_a" num_partition_sectors="512" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="2048.0" sparse="false" start_byte_hex="0x4f813000" start_sector="325651"/>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="" label="xbl_ramdump_b" num_partition_sectors="512" partofsingleimage="false" physical_partition_number="4" readbackverify="false" size_in_KB="2048.0" sparse="false" start_byte_hex="0x9d420000" start_sector="644128"/>
+
+</data>
