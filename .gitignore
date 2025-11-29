@@ -1,4 +1,5 @@
 bin/tmp.bin
+bin/cmd.xml
 bin/port_trace.txt
 readback_*
 Chimera_OPLUS_files/
